@@ -279,6 +279,7 @@ function getDownloadSecret(bookId, token) {
  * @param format
  */
 function downloadEBook(secret, token, format = 'html') {
+    alert('使用本工具存在被封号风险，请酌情使用！！！')
     if (evtSource) {
         // 关闭之前的下载通道
         evtSource.close()
